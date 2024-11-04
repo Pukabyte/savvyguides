@@ -1,0 +1,22 @@
+{
+  "name": "savvyguides",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 3434",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "documate:upload": "documate upload"
+  },
+  "devDependencies": {
+    "@documate/documate": "^0.2.1",
+    "vitepress": "^1.3.1",
+    "vue": "^3.4.33"
+  },
+  "dependencies": {
+    "@documate/vue": "^0.3.1",
+    "markdown-it-container": "^4.0.0",
+    "shiki": "^1.11.1",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.5"
+  }
+}
