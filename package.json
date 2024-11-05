@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --host",
-    "build": "vitepress build docs --host",
+    "build": "vitepress preview docs --port 8080",
     "serve": "vitepress serve docs",
     "documate:upload": "documate upload"
   },
