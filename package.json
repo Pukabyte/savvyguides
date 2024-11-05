@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs --port 8080",
-    "build": "vitepress preview docs --port 8080",
+    "dev": "vitepress dev docs",
+    "build": "vitepress preview docs",
     "serve": "vitepress serve docs",
     "documate:upload": "documate upload"
   },
