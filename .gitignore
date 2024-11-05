@@ -131,3 +131,19 @@ dist
 
 docker-compose.yml
 Dockerfile
+cache
+/coverage
+*.log
+*.tgz
+.DS_Store
+.idea
+.temp
+.vite_opt_cache
+.vscode
+dist
+cache
+temp
+examples-temp
+pnpm-global
+TODOs.md
+*.timestamp-*.mjs
