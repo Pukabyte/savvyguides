@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs --port 3434",
+    "dev": "vitepress dev docs --host",
     "build": "vitepress build docs --host",
     "serve": "vitepress serve docs",
     "documate:upload": "documate upload"
