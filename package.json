@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --port 3434",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs --host",
     "serve": "vitepress serve docs",
     "documate:upload": "documate upload"
   },
