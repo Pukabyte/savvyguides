@@ -13,7 +13,7 @@ hero:
           link: /intro
         - theme: alt
           text: "💬 Savvy Discord"
-          link: https://discord.gg/XNUUEU9P
+          link: https://discord.gg/vMSnNcd7m5
         - theme: alt
           text: "🍻 Buy me a beer"
           link: https://ko-fi.com/savvyservers/tip
@@ -36,6 +36,6 @@ features:
 
     - title: "Savvy Servers"
       icon: 💻
-      link: https://discord.gg/XNUUEU9P
+      link: https://discord.gg/vMSnNcd7m5
       details: "Book a time with me to do the setup for you. This will include everything for the Sailarrs guide and more."
 ---
