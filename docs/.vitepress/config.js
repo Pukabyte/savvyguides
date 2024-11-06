@@ -11,7 +11,7 @@ export default defineConfig({
         nav: [
             { text: "Home", link: "/" },
             { text: "Guides & Tutorials", link: "/intro" },
-            { text: "Join The Discord", link: "https://discord.gg/wDgVdH8vNM" },
+            { text: "Join The Discord", link: "https://discord.gg/vMSnNcd7m5" },
         ],
         sidebar: [],
     },
