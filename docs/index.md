@@ -31,7 +31,7 @@ features:
 
     - title: "Riven"
       icon: 🌊
-      link: /riven/
+      link: https://rivenmedia.github.io/wiki/
       details: "A successor to plex-debrid. Riven is an AIO application that handles searching, downloading, symlinking, and importing into your media server"
 
     - title: "Savvy Servers"
