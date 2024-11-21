@@ -14,6 +14,9 @@ export default defineConfig({
             { text: "Join The Discord", link: "https://discord.gg/vMSnNcd7m5" },
         ],
         sidebar: [],
+        search: {
+            provider: 'local'
+        }
     },
 
     head: [["link", { rel: "stylesheet", href: "/styles.css" }]],
