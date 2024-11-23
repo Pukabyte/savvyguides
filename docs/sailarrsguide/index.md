@@ -450,7 +450,7 @@ x-blackhole: &blackhole
   build: 
     context: .
     dockerfile: Dockerfile.blackhole
-  image: ghcr.io/westsurname/scripts/blackhole:latest
+  image: ghcr.io/westsurname/scripts/blackhole:pr-38
   pull_policy: always
   user: "${PUID:-}${PGID:+:${PGID}}"
   env_file:
