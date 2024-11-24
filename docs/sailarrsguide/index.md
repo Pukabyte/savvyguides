@@ -450,7 +450,7 @@ x-blackhole: &blackhole
   build: 
     context: .
     dockerfile: Dockerfile.blackhole
-  image: ghcr.io/westsurname/scripts/blackhole:pr-38
+  image: ghcr.io/westsurname/scripts/blackhole:latest
   pull_policy: always
   user: "${PUID:-}${PGID:+:${PGID}}"
   env_file:
@@ -822,23 +822,23 @@ If `--no-confirm` is set it'll run through the whole process and delete all fold
 :::
 
 :::warning
-Removes torrents from Real-Debrid that do not have a symlink attached to them.
+Removes torrents from Real-Debrid that do not have a symlink attached to them.<br/>
 
-- Change `path/to/debrid/mount` to the parent folder where all your links/symlinks point to.
+- Change `path/to/debrid/mount` to the parent folder where all your links/symlinks point to.<br/>
 - Change `path/to/symlinks` to the parent media (plex) folder where all your symlinks are.
 :::
 
 ### Symclean
 :::info
-Rewrites symlinks if some were made using the old volume mapping method (/mount/torrents) to the new volume mapping method (/mnt/remote/realdebrid)
-
+Rewrites symlinks if some were made using the old volume mapping method (/mount/torrents) to the new volume mapping method (/mnt/remote/realdebrid)<br/>
+<br/>
 - read the code and make the necessary changes as per needed for your use case.
 :::
 
 ### Start/Stop/Restart
 :::info
-Runs the action for all the containers that access Zurg in case of failed order of start where zurg/rclone starts after the other containers on a reboot.
-
+Runs the action for all the containers that access Zurg in case of failed order of start where zurg/rclone starts after the other containers on a reboot.<br/>
+<br/>
 - useful upon rebooting the server where docker containers are started randomly
 :::
 
@@ -856,7 +856,10 @@ This script will do the following
 ```
 
 ## Docker Stack 
-
+:::info
+This is only provided as an example of a docker stack.</br>
+This may be out of date, and it is untested as is.
+:::
 ```yaml
 version: '3.8'
 
