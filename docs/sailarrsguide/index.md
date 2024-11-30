@@ -80,11 +80,6 @@ get_torrents_count: 5000
 serve_from_rclone: true
 # verify_download_link: false
 # force_ipv6: false
-directories:
-  torrents:
-    group: 1
-    filters:
-      - regex: /.*/
 ```
 
 ```yaml [docker-compose.yml]
@@ -138,7 +133,7 @@ pacer_min_sleep = 0
 :::
 
 :::info
-This configuration stores all torrents to `/mnt/remote/realdebrid/torrents` so that blackhole can see the torrents when downloading and creating the symlinks.
+This configuration stores all torrents to `/mnt/remote/realdebrid/__all__` so that blackhole can see the torrents when downloading and creating the symlinks.
 :::
 
 :::warning
@@ -359,7 +354,7 @@ TAUTULLI_API_KEY=<tautulli_api_key>
 REALDEBRID_ENABLED=true
 REALDEBRID_HOST="https://api.real-debrid.com/rest/1.0/"
 REALDEBRID_API_KEY=<realdebrid_api_key> # https://real-debrid.com/apitoken
-REALDEBRID_MOUNT_TORRENTS_PATH="/mnt/remote/realdebrid/torrents"
+REALDEBRID_MOUNT_TORRENTS_PATH="/mnt/remote/realdebrid/__all__"
 
 #---------------------------#
 # TORBOX - BLACKHOLE, REPAIR #
@@ -640,8 +635,8 @@ networks:
 
 You will need to make a directory for each radarr/sonarr instance:
 ```bash
-mkdir /mnt/symlinks/radarr && mkdir /mnt/symlinks/radarr/completed
-mkdir /mnt/symlinks/radarr4k && mkdir /mnt/symlinks/radarr4k/completed
+mkdir -p /mnt/symlinks/radarr/completed
+mkdir -p /mnt/symlinks/radarr4k/completed
 mkdir /mnt/symlinks/radarranime && mkdir /mnt/symlinks/radarranime/completed
 mkdir /mnt/symlinks/sonarr && mkdir /mnt/symlinks/sonarr/completed
 mkdir /mnt/symlinks/sonarr4k && mkdir /mnt/symlinks/sonarr4k/completed
