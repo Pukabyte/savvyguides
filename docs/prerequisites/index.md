@@ -3,7 +3,7 @@
 ## Prerequisites before getting started<br/>
 Please read the below pre-requisites before attempting to follow the Sailarrs Guide.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/savvyservers/tip)
 
 ### Prerequisites
 - A Linux server (I currently run Ubuntu 22.04)
