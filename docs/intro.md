@@ -3,7 +3,7 @@
 Welcome to Savvy Guides<br/>
 This is where I document the exciting progress of creating a virtually infinite media library using Debrid services, Usenet, and media servers by utilising well-known and custom apps, created by the community.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/savvyservers/tip)
 
 ## Recommended Debrid Services
 
