@@ -28,7 +28,7 @@ A few of the community apps already support it with the likes of [Riven](/riven/
 
 [A Sailarr’s Guide to Plex + Real-Debrid](/sailarrsguide/) 
 
-[A Guide to Riven](/riven/) 
+[Riven Documentation](https://rivenmedia.github.io/wiki/)
 
 ## Helpful Links
 
