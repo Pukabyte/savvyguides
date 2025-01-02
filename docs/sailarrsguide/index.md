@@ -291,7 +291,8 @@ PLEX_SERVER_HOST=<plex_server_host>
 PLEX_SERVER_MACHINE_ID=<plex_server_machine_id>
 PLEX_SERVER_API_KEY=<plex_server_api_key>
 PLEX_SERVER_MOVIE_LIBRARY_ID=<plex_server_movie_library_id>
-PLEX_SERVER_TV_SHOW_LIBRARY_ID=<plex_server_movie_library_id>
+PLEX_SERVER_TV_SHOW_LIBRARY_ID=<plex_server_tv_show_library_id>
+PLEX_SERVER_PATH=<plex_server_path>
 
 #-------------------------------------------------------------------------#
 # OVERSEERR - WATCHLIST, PLEX AUTHENTICATION, PLEX REQUEST, RECLAIM SPACE #
@@ -390,12 +391,6 @@ BLACKHOLE_FAIL_IF_NOT_CACHED=true
 BLACKHOLE_RD_MOUNT_REFRESH_SECONDS=200
 BLACKHOLE_WAIT_FOR_TORRENT_TIMEOUT=300
 BLACKHOLE_HISTORY_PAGE_SIZE=500
-
-#------------------------------#
-# PLEX REQUEST - PLEX REQUEST  #
-#------------------------------#
-
-PLEX_REQUEST_SSL_PATH=
 
 #-----------------------------------------------------------------------------------------------#
 # DISCORD - BLACKHOLE, WATCHLIST, PLEX AUTHENTICATION, PLEX REQUEST, MONITOR RAM, RECLAIM SPACE #
@@ -614,7 +609,7 @@ services:
     image: ghcr.io/westsurname/scripts/plex_request_nginx:latest
     pull_policy: always
     volumes:
-      - ${PLEX_REQUEST_SSL_PATH:-/dev/null}:${PLEX_REQUEST_SSL_PATH:-/dev/null}:ro
+      - ${PLEX_SERVER_PATH}:/plex:ro
       - ./sockets:/app/sockets
     ports:
       - 8012:8000
