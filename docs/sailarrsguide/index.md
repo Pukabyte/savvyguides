@@ -412,8 +412,8 @@ REPAIR_RUN_INTERVAL="1d"
 #-----------------------#
 
 PYTHONUNBUFFERED=TRUE
-PUID=
-PGID=
+PUID=1000
+PGID=1000
 UMASK=002
 DOCKER_NETWORK="scripts_default"
 DOCKER_NETWORK_EXTERNAL=false
@@ -504,6 +504,22 @@ services:
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}anime:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_anime, blackhole_all, all]
 
+  blackhole_mux:
+    <<: *blackhole
+    container_name: blackholemux
+    environment:
+      - SONARR_HOST=${SONARR_HOST_MUX}
+      - SONARR_API_KEY=${SONARR_API_KEY_MUX}
+      - RADARR_HOST=${RADARR_HOST_MUX}
+      - RADARR_API_KEY=${RADARR_API_KEY_MUX}
+      - BLACKHOLE_BASE_WATCH_PATH=/${BLACKHOLE_BASE_WATCH_PATH}
+    volumes:
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}mux:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}
+      - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}mux:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
+    profiles: [blackhole_mux, blackhole_all, all]
+
   repair_service:
     <<: *repair
     container_name: repair
@@ -551,6 +567,22 @@ services:
       - ${RADARR_ROOT_FOLDER_ANIME}:${RADARR_ROOT_FOLDER}
       - /mnt:/mnt
     profiles: [repair_anime, repair_all, all]
+
+  repair_mux:
+    <<: *repair
+    container_name: repairmux
+    environment:
+      - SONARR_HOST=${SONARR_HOST_MUX}
+      - SONARR_API_KEY=${SONARR_API_KEY_MUX}
+      - RADARR_HOST=${RADARR_HOST_MUX}
+      - RADARR_API_KEY=${RADARR_API_KEY_MUX}
+    volumes:
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${SONARR_ROOT_FOLDER_MUX}:${SONARR_ROOT_FOLDER}
+      - ${RADARR_ROOT_FOLDER_MUX}:${RADARR_ROOT_FOLDER}
+      - /mnt:/mnt
+    profiles: [repair_mux, repair_all, all]
 
   watchlist:
     build: 
