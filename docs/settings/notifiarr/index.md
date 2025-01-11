@@ -103,12 +103,16 @@ Now, back on the integration setup page you will see the Trash Guides integratio
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/></a>
 </div>
 
+You will be presented with a table of custom formats. You can scroll down or click on one of the formats to be presented with a list of each custom format type. 
+
+:::info
+You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
+:::
+
 From here it's up to you to determine what formats you will need. If you are using anime, expand each anime format related format and sync them to the desired instance.
 
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
 </div>
 
-:::info
-You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
-:::
+
