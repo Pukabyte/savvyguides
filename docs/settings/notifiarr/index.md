@@ -96,6 +96,8 @@ Scroll all the way down and save your progress.
 </div>
 
 ## Creating quality profiles
+Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
+
 Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440592891809815/image.png?ex=678312e3&is=6781c163&hm=c5eff26b7ff3e05563c365b800a2beaab3751f751fba5f0eae6fd503e0e0e97b&"/>
@@ -107,7 +109,7 @@ We will be syncing the Remux + WEB 2160P profile for radarr.
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440127420792842/image.png?ex=67831275&is=6781c0f5&hm=a6d657890816c21b0ab4cee8512d90116197f60e7ea543436152de165b3eb7ab&"/>
 </div>
 
-We will create this profile making sure we create a profile for each instance. I recommend naming them differently as to not cause any confusion later on. I also recommend adding all of the optional formats at the bottom.
+We will create this profile making sure we create a profile for each instance (and for sonarr as well). I recommend naming them differently as to not cause any confusion later on. I also recommend adding all of the optional formats at the bottom.
 
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327441638360092774/image.png?ex=678313dd&is=6781c25d&hm=dc79dd4d632d363d8460a91128fc09849c2832a1e8d18e5f89c0448c489b7ffa&"/>
@@ -117,7 +119,7 @@ We will create this profile making sure we create a profile for each instance. I
 
 ## Configuring Formats
 
-Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
+
 
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
