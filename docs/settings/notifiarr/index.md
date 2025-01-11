@@ -107,6 +107,12 @@ We will be syncing the Remux + WEB 2160P profile for radarr.
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440127420792842/image.png?ex=67831275&is=6781c0f5&hm=a6d657890816c21b0ab4cee8512d90116197f60e7ea543436152de165b3eb7ab&"/>
 </div>
 
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327441225720004648/image.png?ex=6783137a&is=6781c1fa&hm=f23709c3aeef71686105c90b03ec1b068c2f00b09f79f34f6882b1da8546cd70&"/>
+</div>
+
+
+
 ## Configuring Formats
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
