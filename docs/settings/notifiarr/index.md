@@ -84,10 +84,17 @@ You should now see the notifiarr client connected in notifiarr's dashboard with 
 Click on the cog of the "Add/Remove Integrations" section and scroll down to find and enable Trash Guides sync.
 Scroll all the way down and save your progress.
 
-## Configuring Trash Guides integration
+## Configuring Formats
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
+
+
+From here it's up to you to determine what formats you will need. If you are using anime, expand each anime format related format and sync them to the desired instance.
 
 <div align="center">
     <img width="1000" height="280" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
 </div>
+
+:::info
+You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
+:::
