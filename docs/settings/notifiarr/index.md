@@ -156,3 +156,16 @@ Click on "Naming" in the sidebar and set as seen below. Make sure to save.
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327446815070490634/image.png?ex=678318af&is=6781c72f&hm=1c0b6f0caf82abd6dbae55eccd38f32ace5a21209522b74f743c59e97afce879&"/>
 </div>
+
+Scroll down till you see the "Client Settings" section and set your interval to whatever you prefer. Make sure to save your client settings.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327447228356366388/image.png?ex=67831912&is=6781c792&hm=97645a5ad744ee10daf25bdbe4dfc2da02b333284d0676daeb15e565b43b181b&"/>
+</div>
+
+# Success!
+
+Now that you're done, notifiarr will handle all of the heavy work involved with keeping your custom formats and quality profiles up to date.
+I recommend setting up your discord channels so that you can monitor any changes to your custom formats.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327447889596776509/image.png?ex=678319af&is=6781c82f&hm=6e5e4d7f24c83679c742c792e60b9eb84d07b0ca31905742d8b817da22effb86&"/>
+</div>
