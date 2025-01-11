@@ -72,7 +72,7 @@ Now, start the container. The config will be encrypted from here on, and will ne
 Navigate to the client (default port: 5454) and login.
 Click on "Starr Apps" in the sidebar and configure your instances as seen below.
 <div align="center">
-    <img width="1000" height="280" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327433834312110153/image.png?ex=67830c98&is=6781bb18&hm=d79cd085c7c7210c232a8a1754b2487673cecf5c62b2a140ad8fdc3809e62959&"/></a>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327433834312110153/image.png?ex=67830c98&is=6781bb18&hm=d79cd085c7c7210c232a8a1754b2487673cecf5c62b2a140ad8fdc3809e62959&"/></a>
 </div>
 Once you have populated all the required fields, make sure you hit "Save & Reload" at the bottom of the sidebar.
 
@@ -93,7 +93,7 @@ Now, back on the integration setup page you will see the Trash Guides integratio
 From here it's up to you to determine what formats you will need. If you are using anime, expand each anime format related format and sync them to the desired instance.
 
 <div align="center">
-    <img width="1000" height="280" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
 </div>
 
 :::info
