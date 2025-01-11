@@ -86,7 +86,14 @@ You should now see the notifiarr client connected in notifiarr's dashboard with 
 :::
 
 Click on the cog of the "Add/Remove Integrations" section and scroll down to find and enable Trash Guides sync.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434813849862256/image.png?ex=67830d82&is=6781bc02&hm=bea77bcd67d85f023417e53df07a5baf8bb291c6446268653b8f5de6442f1af1&"/></a>
+</div>
+
 Scroll all the way down and save your progress.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/></a>
+</div>
 
 ## Configuring Formats
 
