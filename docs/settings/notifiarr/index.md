@@ -115,8 +115,8 @@ From here it's up to you to determine what formats you will need. For example, i
 You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
 :::
 
-<div align="center">
-    <img style="margin-top: 15px; margin-bottom: 15px;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
+<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
 </div>
 
 
