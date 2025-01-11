@@ -99,6 +99,9 @@ Scroll all the way down and save your progress.
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
 
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/></a>
+</div>
 
 From here it's up to you to determine what formats you will need. If you are using anime, expand each anime format related format and sync them to the desired instance.
 
