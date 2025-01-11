@@ -128,7 +128,7 @@ Once we have our profiles made (and fully synced over to sonarr and radarr) we c
 Enter the Formats section in the sidebar, and you will be presented with a table of custom formats. 
 
 
-
+We are going to scroll down till we see the list of format categories from above. 
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327437409180319807/image.png?ex=67830fec&is=6781be6c&hm=7094a7272a052c76d256048459baebfeac43122e0fa8032489fbaf50395ea588&"/>
 </div>
