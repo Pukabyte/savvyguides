@@ -19,7 +19,7 @@ Most of the guides in here revolve around it, so why not join up!
 
 [**https://torbox.app**](https://torbox.app/subscription?referral=6b63e436-5976-4f61-83ca-2248d214bee1)<br/>
 Torbox is the next up-and-coming debrid service with the ability to seed your torrents and also cache Usenet content.<br/>
-A few of the community apps already support it with the likes of [Riven](/riven/) and [Blackhole](/blackhole/).
+A few of the community apps already support it with the likes of [Blackhole](/blackhole/).
  
 
 ## My Guides
