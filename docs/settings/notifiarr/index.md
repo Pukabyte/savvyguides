@@ -72,12 +72,12 @@ Now, start the container. The config will be encrypted from here on, and will ne
 Navigate to the client (default port: 5454) and login.
 Click on "Starr Apps" in the sidebar and configure your instances as seen below.
 <div align="center">
-    <img style="padding: 100;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327433834312110153/image.png?ex=67830c98&is=6781bb18&hm=d79cd085c7c7210c232a8a1754b2487673cecf5c62b2a140ad8fdc3809e62959&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327433834312110153/image.png?ex=67830c98&is=6781bb18&hm=d79cd085c7c7210c232a8a1754b2487673cecf5c62b2a140ad8fdc3809e62959&"/>
 </div>
 Once you have populated all the required fields, make sure you hit "Save & Reload" at the bottom of the sidebar.
 
 <div align="center">
-    <img style="padding: 100;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434423104438393/image.png?ex=67830d25&is=6781bba5&hm=b3d0139d13f41741e2d4dff761ab00fe22cb795d346f9f53eb40c4a18ace05ae&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434423104438393/image.png?ex=67830d25&is=6781bba5&hm=b3d0139d13f41741e2d4dff761ab00fe22cb795d346f9f53eb40c4a18ace05ae&"/>
 </div>
 
 ## Enabling Trash Guides integration
@@ -87,12 +87,12 @@ You should now see the notifiarr client connected in notifiarr's dashboard with 
 
 Click on the cog of the "Add/Remove Integrations" section and scroll down to find and enable Trash Guides sync.
 <div align="center">
-    <img style="padding: 100;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434813849862256/image.png?ex=67830d82&is=6781bc02&hm=bea77bcd67d85f023417e53df07a5baf8bb291c6446268653b8f5de6442f1af1&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434813849862256/image.png?ex=67830d82&is=6781bc02&hm=bea77bcd67d85f023417e53df07a5baf8bb291c6446268653b8f5de6442f1af1&"/>
 </div>
 
 Scroll all the way down and save your progress.
 <div align="center">
-    <img style="padding: 100;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/>
 </div>
 
 ## Configuring Formats
@@ -100,13 +100,13 @@ Scroll all the way down and save your progress.
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
 
 <div align="center">
-    <img style="padding: 100;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
 </div>
 
 You will be presented with a table of custom formats. You can scroll down or click on one of the formats to be presented with a list of each custom format type. 
 
 <div align="center">
-    <img style="margin: 15px;" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327437409180319807/image.png?ex=67830fec&is=6781be6c&hm=7094a7272a052c76d256048459baebfeac43122e0fa8032489fbaf50395ea588&"/>
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327437409180319807/image.png?ex=67830fec&is=6781be6c&hm=7094a7272a052c76d256048459baebfeac43122e0fa8032489fbaf50395ea588&"/>
 </div>
 
 
@@ -115,7 +115,7 @@ From here it's up to you to determine what formats you will need. For example, i
 You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
 :::
 
-<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
+<div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/>
 </div>
 
