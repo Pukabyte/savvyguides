@@ -5,13 +5,9 @@
 
 ::: tip
 👋🏼 If you need any assistance with this come find me on discord ***@thebropuks***
-You can also visit the kometa discord for additional configs and support. [Kometa Discord](https://kometa.wiki/en/latest/discord/)
+You can also visit the notifiarr discord for any help or questions about the service. [Notifiarr Discord](https://discord.gg/nXuuUDMtGg)
 :::
 
-:::info ⭐ Special Mentions
-
-
-:::
 
 ### Notifiarr is a purpose built system to bring many applications together to manage and customize notifications via Discord. You can monitor many aspects of your network(s).
 :::info
@@ -133,15 +129,30 @@ We are going to scroll down till we see the list of format categories from above
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327437409180319807/image.png?ex=67830fec&is=6781be6c&hm=7094a7272a052c76d256048459baebfeac43122e0fa8032489fbaf50395ea588&"/>
 </div>
 
-
-From here it's up to you to determine what formats you will need. For example, if you are using anime, expand each anime format related format and sync them to the desired instance. 
 :::info
-You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
+From here it's up to you to determine what formats you will need. You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#trash-quality-profiles) to get an idea of what you might want in each instance. 
 :::
 
+For example, if you are using anime, expand each anime related format and sync them to the desired instance. 
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/>
 </div>
 
 
 
+## Final steps
+
+Now that the bulk of the work is done, all that's left to do is sync your quality settings and sync your naming profiles.
+
+Starting off at quality settings, click on "Quality" in the sidebar. 
+
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327445836870975559/image.png?ex=678317c6&is=6781c646&hm=9887c6df6faa69beec977210533847f848c8473236e472198d3d54cef22f70be&"/>
+</div>
+
+Enable each of these by clicking on the Checkbox in the "Sync" column. Do this for each instance and Sonarr as well. Be sure to click save.
+
+Click on "Naming" in the sidebar and set as seen below. Make sure to save.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327446815070490634/image.png?ex=678318af&is=6781c72f&hm=1c0b6f0caf82abd6dbae55eccd38f32ace5a21209522b74f743c59e97afce879&"/>
+</div>
