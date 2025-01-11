@@ -89,5 +89,5 @@ Scroll all the way down and save your progress.
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
 
 <div align="center">
-    <img width="285" height="80" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
+    <img width="580" height="240" src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/></a>
 </div>
