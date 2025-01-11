@@ -1,4 +1,4 @@
-# A Sailarr’s Guide to Plex + Real-Debrid
+# A Sailarr’s Guide to Notifiarr's Trash Guide Sync
 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
