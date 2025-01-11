@@ -95,6 +95,18 @@ Scroll all the way down and save your progress.
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/>
 </div>
 
+## Creating quality profiles
+Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440592891809815/image.png?ex=678312e3&is=6781c163&hm=c5eff26b7ff3e05563c365b800a2beaab3751f751fba5f0eae6fd503e0e0e97b&"/>
+</div>
+
+We will be syncing the Remux + WEB 2160P profile for radarr. 
+
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440127420792842/image.png?ex=67831275&is=6781c0f5&hm=a6d657890816c21b0ab4cee8512d90116197f60e7ea543436152de165b3eb7ab&"/>
+</div>
+
 ## Configuring Formats
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
@@ -118,5 +130,6 @@ You can view the quality profiles [here](https://trash-guides.info/Sonarr/sonarr
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327431307378163803/image.png?ex=67830a3e&is=6781b8be&hm=9bd91af0012f3d38a751d1fb55af3cd8fb6fbdcd2112712aed2823df23ce3332&"/>
 </div>
+
 
 
