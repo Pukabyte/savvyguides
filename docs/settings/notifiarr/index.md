@@ -102,7 +102,6 @@ Now, back on the integration setup page you will see the Trash Guides integratio
 
 ## Creating quality profiles
 
-
 Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440592891809815/image.png?ex=678312e3&is=6781c163&hm=c5eff26b7ff3e05563c365b800a2beaab3751f751fba5f0eae6fd503e0e0e97b&"/>
@@ -124,9 +123,9 @@ We will create this profile making sure we create a profile for each instance (a
 
 ## Configuring Formats
 
+Once we have our profiles made (and fully synced over to sonarr and radarr) we can now add additional formats to each instance.
 
-
-
+Enter the Formats section in the sidebar
 
 You will be presented with a table of custom formats. You can scroll down or click on one of the formats to be presented with a list of each custom format type. 
 
