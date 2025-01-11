@@ -95,8 +95,13 @@ Scroll all the way down and save your progress.
     <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/>
 </div>
 
-## Creating quality profiles
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
+</div>
+
+## Creating quality profiles
+
 
 Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
 <div align="center">
@@ -121,9 +126,7 @@ We will create this profile making sure we create a profile for each instance (a
 
 
 
-<div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
-</div>
+
 
 You will be presented with a table of custom formats. You can scroll down or click on one of the formats to be presented with a list of each custom format type. 
 
