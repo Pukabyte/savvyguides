@@ -76,6 +76,9 @@ Click on "Starr Apps" in the sidebar and configure your instances as seen below.
 </div>
 Once you have populated all the required fields, make sure you hit "Save & Reload" at the bottom of the sidebar.
 
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434423104438393/image.png?ex=67830d25&is=6781bba5&hm=b3d0139d13f41741e2d4dff761ab00fe22cb795d346f9f53eb40c4a18ace05ae&"/></a>
+</div>
 
 ## Enabling Trash Guides integration
 :::info
