@@ -223,6 +223,7 @@ All the information can be found in the link below.
 :::tip
 - I highly recommend looking at the `Recommended Naming Scheme` for both Radarr and Sonarr
 - I also highly recommend looking at the `Quality Profiles` and `Collection Of Custom Formats`
+- There is also recyclarr and [notifiarr](/settings/notifiarr) that will help automate the setup for you.
 :::
     
 --> [Trash-Guides](https://trash-guides.info/) <--
