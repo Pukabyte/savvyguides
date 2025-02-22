@@ -1,7 +1,4 @@
----
-title: Trash Guides
-order: 2
----
+
 # A Sailarr’s Guide to Notifiarr's TRaSH-Guides Sync
 
 
