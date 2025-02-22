@@ -98,12 +98,12 @@ Now, back on the integration setup page you will see the Trash Guides integratio
 
 ## Creating quality profiles
 
-Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
+Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one. We will be syncing the Remux + WEB 2160P profile for radarr. 
 <div align="center">
     <img src="assets/images/step6.png"/>
 </div>
 
-We will be syncing the Remux + WEB 2160P profile for radarr. 
+After you have added a new profile, configure it by pressing on the tool icon to the right.
 
 <div align="center">
     <img src="assets/images/step7.png"/>
@@ -112,7 +112,7 @@ We will be syncing the Remux + WEB 2160P profile for radarr.
 We will create this profile making sure we create a profile for each instance (and for sonarr as well). I recommend naming them differently as to not cause any confusion later on. I also recommend adding all of the optional formats at the bottom.
 
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327441638360092774/image.png?ex=678313dd&is=6781c25d&hm=dc79dd4d632d363d8460a91128fc09849c2832a1e8d18e5f89c0448c489b7ffa&"/>
+    <img src="assets/images/step8.png"/>
 </div>
 
 
