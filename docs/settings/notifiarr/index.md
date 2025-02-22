@@ -1,4 +1,8 @@
-# A Sailarr’s Guide to Notifiarr's Trash Guide Sync
+---
+title: TRaSH-Guides Sync
+order: 2
+---
+# A Sailarr’s Guide to Notifiarr's TRaSH-Guides Sync
 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
@@ -69,12 +73,12 @@ Now, start the container. The config will be encrypted from here on, and will ne
 Navigate to the client (default port: 5454) and login.
 Click on "Starr Apps" in the sidebar and configure your instances as seen below.
 <div align="center">
-    <img src="assets/images/step1.png"/>
+    <img src="./assets/images/step1.png"/>
 </div>
 Once you have populated all the required fields, make sure you hit "Save & Reload" at the bottom of the sidebar.
 
 <div align="center">
-    <img src="assets/images/step2.png"/>
+    <img src="./assets/images/step2.png"/>
 </div>
 
 ## Enabling Trash Guides integration
@@ -84,31 +88,31 @@ You should now see the notifiarr client connected in notifiarr's dashboard with 
 
 Click on the cog of the "Add/Remove Integrations" section and scroll down to find and enable Trash Guides sync.
 <div align="center">
-    <img src="assets/images/step3.png"/>
+    <img src="./assets/images/step3.png"/>
 </div>
 
 Scroll all the way down and save your progress.
 <div align="center">
-    <img src="assets/images/step4.png"/>
+    <img src="./assets/images/step4.png"/>
 </div>
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
 <div align="center">
-    <img src="assets/images/step5.png"/>
+    <img src="./assets/images/step5.png"/>
 </div>
 
 ## Creating quality profiles
 
 Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one. We will be syncing the Remux 2160p (Alternative) profile for radarr. 
 <div align="center">
-    <img src="assets/images/step6.png"/>
+    <img src="./assets/images/step6.png"/>
 </div>
 
 Now scroll down to the bottom to configure.
 We will create this profile making sure we create a profile for each instance (and for sonarr as well). I recommend naming them differently as to not cause any confusion later on. I also recommend adding any of the optional formats at the bottom that you think you may need.
 
 <div align="center">
-    <img src="assets/images/step7.png"/>
+    <img src="./assets/images/step7.png"/>
 </div>
 
 
@@ -122,7 +126,7 @@ Enter the Formats section in the sidebar, and you will be presented with a table
 
 We are going to scroll down until we see the list of format categories from above. 
 <div align="center">
-    <img src="assets/images/step8.png"/>
+    <img src="./assets/images/step8.png"/>
 </div>
 
 :::info
@@ -131,7 +135,7 @@ From here it's up to you to determine what formats you will need. You can view t
 
 For example, if you are using anime, expand each anime related format and sync them to the desired instance. 
 <div align="center">
-    <img src="assets/images/step9.png"/>
+    <img src="./assets/images/step9.png"/>
 </div>
 
 
@@ -143,19 +147,19 @@ Now that the bulk of the work is done, all that's left to do is sync your qualit
 Starting off at quality settings, click on "Quality" in the sidebar. 
 
 <div align="center">
-    <img src="assets/images/step10.png"/>
+    <img src="./assets/images/step10.png"/>
 </div>
 
 Enable each of these by clicking on the Checkbox in the "Sync" column. Do this for each instance and Sonarr as well. Be sure to click save.
 
 Click on "Naming" in the sidebar and set as seen below. Make sure to save.
 <div align="center">
-    <img src="assets/images/step11.png"/>
+    <img src="./assets/images/step11.png"/>
 </div>
 
 Scroll down until you see the "Client Settings" section and set your interval to whatever you prefer. Make sure to save your client settings.
 <div align="center">
-    <img src="assets/images/step12.png"/>
+    <img src="./assets/images/step12.png"/>
 </div>
 
 # Success!
@@ -163,5 +167,5 @@ Scroll down until you see the "Client Settings" section and set your interval to
 Now that you're done, notifiarr will handle all of the heavy work involved with keeping your custom formats and quality profiles up to date.
 I recommend setting up your discord channels so that you can monitor any changes to your custom formats.
 <div align="center">
-    <img src="assets/images/step13.png"/>
+    <img src="./assets/images/step13.png"/>
 </div>
