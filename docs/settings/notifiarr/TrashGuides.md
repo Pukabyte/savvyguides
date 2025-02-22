@@ -1,5 +1,5 @@
 
-# A Sailarr’s Guide to Notifiarr's TRaSH-Guides Sync
+# TRaSH-Guides integration
 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)

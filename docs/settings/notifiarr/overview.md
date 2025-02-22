@@ -1,5 +1,5 @@
 
-# Coming Soon...
+# A Sailarr’s Guide to Notifiarr
 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
