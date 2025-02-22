@@ -30,10 +30,24 @@ export default defineConfig({
                 collapsed: false,
                 deletePrefix: "",
                 sideBarResolved: (data) => data,
-                sideBarItemsResolved: (data) => data,
+                sideBarItemsResolved: (items) => {
+                    return items.map(item => {
+                        // Convert filename format to title case automatically
+                        const text = item.text
+                            .replace(/([A-Z])/g, ' $1') // Add space before capital letters
+                            .replace(/^./, str => str.toUpperCase()) // Capitalize first letter
+                            .replace(/([a-z])([A-Z])/g, '$1 $2') // Add space between words
+                            .trim();
+                        
+                        return {
+                            ...item,
+                            text
+                        };
+                    });
+                },
                 beforeCreateSideBarItems: (data) => data.sort(),
-                titleFromFile: false,
-            }),
+                titleFromFile: false
+            })
         ],
     },
 });
