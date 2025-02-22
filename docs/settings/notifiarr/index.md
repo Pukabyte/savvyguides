@@ -24,7 +24,7 @@ For our purpose, we will be using notifarr to sync trash guides custom formats t
 
 ### Starting off
     
-First, create an account with [Notifiarr](https://notifiarr.com/)
+First, create an account with [Notifiarr](https://notifiarr.com/).
 Navigate to [Support Project](https://notifiarr.com/sponsor.php) and make a one-time payment of at least $3 to gain access to the trash guides integration. 
  
 
