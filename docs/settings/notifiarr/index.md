@@ -83,30 +83,30 @@ You should now see the notifiarr client connected in notifiarr's dashboard with 
 
 Click on the cog of the "Add/Remove Integrations" section and scroll down to find and enable Trash Guides sync.
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434813849862256/image.png?ex=67830d82&is=6781bc02&hm=bea77bcd67d85f023417e53df07a5baf8bb291c6446268653b8f5de6442f1af1&"/>
+    <img src="assets/images/step3.png"/>
 </div>
 
 Scroll all the way down and save your progress.
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327434983664652402/image.png?ex=67830daa&is=6781bc2a&hm=4873d79e8509b75a5d75fbaf2aade820f680a819b9ce55fd01b5f4e02ffbdb93&"/>
+    <img src="assets/images/step4.png"/>
 </div>
 
 Now, back on the integration setup page you will see the Trash Guides integration. Click on the cog to enter the settings menu.
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327435202066382920/image.png?ex=67830dde&is=6781bc5e&hm=5b867f3bd121dff1729a1b4b8e16e132305f7763084cee73dedd2ebad7819bfb&"/>
+    <img src="assets/images/step5.png"/>
 </div>
 
 ## Creating quality profiles
 
 Click on the Profiles section in the sidebar on the left. We are going to be creating a quality profile which will import the required custom formats for the next section of this guide. You can choose to update a pre-existing profile, but for the sake of this guide we will be adding a new one.
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440592891809815/image.png?ex=678312e3&is=6781c163&hm=c5eff26b7ff3e05563c365b800a2beaab3751f751fba5f0eae6fd503e0e0e97b&"/>
+    <img src="assets/images/step6.png"/>
 </div>
 
 We will be syncing the Remux + WEB 2160P profile for radarr. 
 
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327440127420792842/image.png?ex=67831275&is=6781c0f5&hm=a6d657890816c21b0ab4cee8512d90116197f60e7ea543436152de165b3eb7ab&"/>
+    <img src="assets/images/step7.png"/>
 </div>
 
 We will create this profile making sure we create a profile for each instance (and for sonarr as well). I recommend naming them differently as to not cause any confusion later on. I also recommend adding all of the optional formats at the bottom.
