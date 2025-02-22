@@ -6,7 +6,7 @@
 
 ::: tip
 👋🏼 If you need any assistance with this come find me on discord ***@thebropuks***
-You can also visit the notifiarr discord for any help or questions about the service. [Notifiarr Discord](https://discord.gg/nXuuUDMtGg)
+You can also visit the [notifiarr discord](https://discord.gg/nXuuUDMtGg) for any help or questions about the service. 
 :::
 
 
