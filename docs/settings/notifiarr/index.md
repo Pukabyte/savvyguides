@@ -68,7 +68,7 @@ Now, start the container. The config will be encrypted from here on, and will ne
 Navigate to the client (default port: 5454) and login.
 Click on "Starr Apps" in the sidebar and configure your instances as seen below.
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/1314331222058467359/1327433834312110153/image.png?ex=67830c98&is=6781bb18&hm=d79cd085c7c7210c232a8a1754b2487673cecf5c62b2a140ad8fdc3809e62959&"/>
+    <img src="assets/images/step1.png"/>
 </div>
 Once you have populated all the required fields, make sure you hit "Save & Reload" at the bottom of the sidebar.
 
