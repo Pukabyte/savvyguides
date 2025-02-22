@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar";
 
 export default defineConfig({
-    title: "Savvy Guides", // Title of your site
-    description: "Guides For Creating The Ultimate Debrid Media Server",
+    title: "Savvy Guides",
+    description: "Guides For Creating The Ultimate Debrid Media Server", 
     base: "/",
     ignoreDeadLinks: true,
 
@@ -31,21 +31,34 @@ export default defineConfig({
                 deletePrefix: "",
                 sideBarResolved: (data) => data,
                 sideBarItemsResolved: (items) => {
-                    return items.map(item => {
-                        // Convert filename format to title case automatically
-                        const text = item.text
-                            .replace(/([A-Z])/g, ' $1') // Add space before capital letters
-                            .replace(/^./, str => str.toUpperCase()) // Capitalize first letter
-                            .replace(/([a-z])([A-Z])/g, '$1 $2') // Add space between words
-                            .trim();
-                        
-                        return {
-                            ...item,
-                            text
-                        };
-                    });
+                    return items
+                        .map(item => {
+                            if (!item || !item.text) return item;
+                            
+                            const text = item.text
+                                .replace(/([A-Z])/g, ' $1')
+                                .replace(/^./, str => str.toUpperCase())
+                                .replace(/([a-z])([A-Z])/g, '$1 $2')
+                                .replace(/([a-z])([a-z]*)/g, (match, p1, p2) => {
+                                    return p2.includes('guides') ? p1 + p2.replace('guides', ' Guides') : match;
+                                })
+                                .trim();
+                            
+                            return {
+                                ...item,
+                                text
+                            };
+                        })
+                        .sort((a, b) => {
+                            // Safely check if properties exist
+                            const aPath = a?.link?.toLowerCase() || '';
+                            const bPath = b?.link?.toLowerCase() || '';
+                            
+                            if (aPath.includes('overview')) return -1;
+                            if (bPath.includes('overview')) return 1;
+                            return 0;
+                        });
                 },
-                beforeCreateSideBarItems: (data) => data.sort(),
                 titleFromFile: false
             })
         ],

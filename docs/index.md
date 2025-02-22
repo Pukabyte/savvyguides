@@ -41,7 +41,7 @@ features:
 
     - title: "Notifiarr"
       icon: 🔔
-      link: /settings/notifiarr/
+      link: /settings/notifiarr/overview.html
       details: "A purpose built system to bring many applications together to manage and customize notifications via Discord. You can monitor many aspects of your network(s)."
 
     - title: "Kometa"
