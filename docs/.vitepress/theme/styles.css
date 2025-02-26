@@ -1,0 +1,10 @@
+  /* Hover effects */
+  .VPFeatures .item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s;
+  }
+  
+  /* Adjust spacing for items after the first 4 */
+  .VPHome .VPFeatures .items > *:nth-child(n+5) {
+    margin-top: 4rem; /* Increased to accommodate the title */
+  }
