@@ -79,11 +79,6 @@ get_torrents_count: 5000
 # serve_from_rclone: false
 # verify_download_link: false
 # force_ipv6: false
-directories:
-  torrents:
-    group: 1
-    filters:
-      - regex: /.*/
 ```
 
 ```yaml [docker-compose.yml]
@@ -137,7 +132,7 @@ pacer_min_sleep = 0
 :::
 
 :::info
-This configuration stores all torrents to `/mnt/remote/realdebrid/torrents` so that blackhole can see the torrents when downloading and creating the symlinks.
+This configuration stores all torrents to `/mnt/remote/realdebrid/__all__` so that blackhole can see the torrents when downloading and creating the symlinks.
 :::
 
 A web server is now running at `localhost:9999`.
