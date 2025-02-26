@@ -1,7 +1,7 @@
 # A Sailarr’s Guide to Plex + Real-Debrid
 
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/davyjonesmedia/tip)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/savvyservers/tip)
 
 ::: tip
 👋🏼 If you need any assistance with this come find me on discord ***@thebropuks***
