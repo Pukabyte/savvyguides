@@ -474,7 +474,7 @@ services:
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole, blackhole_all, all]
 
-  blackhole_4k:
+  blackhole4k:
     <<: *blackhole
     container_name: blackhole4k
     environment:
@@ -490,7 +490,7 @@ services:
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}4k:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_4k, blackhole_all, all]
 
-  blackhole_anime:
+  blackholeanime:
     <<: *blackhole
     container_name: blackholeanime
     environment:
@@ -506,7 +506,7 @@ services:
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}anime:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_anime, blackhole_all, all]
 
-  blackhole_mux:
+  blackholemux:
     <<: *blackhole
     container_name: blackholemux
     environment:
@@ -522,9 +522,9 @@ services:
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}mux:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_mux, blackhole_all, all]
 
-  repair_service:
+  repair:
     <<: *repair
-    container_name: repair_service
+    container_name: repair
     volumes:
       - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
       - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
@@ -532,9 +532,9 @@ services:
       - ${RADARR_ROOT_FOLDER}:${RADARR_ROOT_FOLDER}
     profiles: [repair, repair_all, all]
 
-  repair_4k:
+  repair4k:
     <<: *repair
-    container_name: repair_4k_service
+    container_name: repair4k
     environment:
       - SONARR_HOST=${SONARR_HOST_4K}
       - SONARR_API_KEY=${SONARR_API_KEY_4K}
@@ -547,9 +547,9 @@ services:
       - ${RADARR_ROOT_FOLDER_4K}:${RADARR_ROOT_FOLDER_4K}
     profiles: [repair_4k, repair_all, all]
 
-  repair_anime:
+  repairanime:
     <<: *repair
-    container_name: repair_anime_service
+    container_name: repairanime
     environment:
       - SONARR_HOST=${SONARR_HOST_ANIME}
       - SONARR_API_KEY=${SONARR_API_KEY_ANIME}
@@ -562,9 +562,9 @@ services:
       - ${RADARR_ROOT_FOLDER_ANIME}:${RADARR_ROOT_FOLDER_ANIME}
     profiles: [repair_anime, repair_all, all]
 
-  repair_mux:
+  repairmux:
     <<: *repair
-    container_name: repair_mux_service
+    container_name: repairmux
     environment:
       - SONARR_HOST=${SONARR_HOST_MUX}
       - SONARR_API_KEY=${SONARR_API_KEY_MUX}
