@@ -651,12 +651,7 @@ networks:
 
 You will need to make a directory for each radarr/sonarr instance:
 ```bash
-mkdir -p /mnt/symlinks/radarr/completed
-mkdir -p /mnt/symlinks/radarr4k/completed
-mkdir /mnt/symlinks/radarranime && mkdir /mnt/symlinks/radarranime/completed
-mkdir /mnt/symlinks/sonarr && mkdir /mnt/symlinks/sonarr/completed
-mkdir /mnt/symlinks/sonarr4k && mkdir /mnt/symlinks/sonarr4k/completed
-mkdir /mnt/symlinks/sonarranime && mkdir /mnt/symlinks/sonarranime/completed
+mkdir -p /mnt/symlinks/{Movies,Movies\ -\ 4K,Movies\ -\ Anime,Movies\ -\ Remux,TV,TV\ -\ 4K,TV\ -\ Anime,TV\ -\ Remux}/{completed,processing}
 ```
 To deploy blackhole, run the following command
 
