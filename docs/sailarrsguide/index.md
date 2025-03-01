@@ -455,7 +455,6 @@ x-repair: &repair
     context: .
     dockerfile: Dockerfile.scripts
   image: ghcr.io/westsurname/scripts/scripts:latest
-  user: "${PUID:-}${PGID:+:${PGID}}"
   pull_policy: always
   command: python repair.py --no-confirm
   env_file:
@@ -469,8 +468,8 @@ services:
     environment:
       - BLACKHOLE_BASE_WATCH_PATH=/${BLACKHOLE_BASE_WATCH_PATH}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole, blackhole_all, all]
@@ -485,8 +484,8 @@ services:
       - RADARR_API_KEY=${RADARR_API_KEY_4K}
       - BLACKHOLE_BASE_WATCH_PATH=/${BLACKHOLE_BASE_WATCH_PATH}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}4k:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}4k:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_4k, blackhole_all, all]
@@ -501,8 +500,8 @@ services:
       - RADARR_API_KEY=${RADARR_API_KEY_ANIME}
       - BLACKHOLE_BASE_WATCH_PATH=/${BLACKHOLE_BASE_WATCH_PATH}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}anime:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}anime:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_anime, blackhole_all, all]
@@ -517,74 +516,65 @@ services:
       - RADARR_API_KEY=${RADARR_API_KEY_MUX}
       - BLACKHOLE_BASE_WATCH_PATH=/${BLACKHOLE_BASE_WATCH_PATH}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}mux:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_SONARR_PATH}
       - ${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}mux:/${BLACKHOLE_BASE_WATCH_PATH}/${BLACKHOLE_RADARR_PATH}
     profiles: [blackhole_mux, blackhole_all, all]
 
   repair_service:
     <<: *repair
-    container_name: repair
-    environment:
-      - SONARR_HOST=${SONARR_HOST}
-      - SONARR_API_KEY=${SONARR_API_KEY}
-      - RADARR_HOST=${RADARR_HOST}
-      - RADARR_API_KEY=${RADARR_API_KEY}
+    container_name: repair_service
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
       - ${SONARR_ROOT_FOLDER}:${SONARR_ROOT_FOLDER}
       - ${RADARR_ROOT_FOLDER}:${RADARR_ROOT_FOLDER}
-      - /mnt:/mnt
     profiles: [repair, repair_all, all]
 
   repair_4k:
     <<: *repair
-    container_name: repair4k
+    container_name: repair_4k_service
     environment:
       - SONARR_HOST=${SONARR_HOST_4K}
       - SONARR_API_KEY=${SONARR_API_KEY_4K}
       - RADARR_HOST=${RADARR_HOST_4K}
       - RADARR_API_KEY=${RADARR_API_KEY_4K}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
-      - ${SONARR_ROOT_FOLDER_4K}:${SONARR_ROOT_FOLDER}
-      - ${RADARR_ROOT_FOLDER_4K}:${RADARR_ROOT_FOLDER}
-      - /mnt:/mnt
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
+      - ${SONARR_ROOT_FOLDER_4K}:${SONARR_ROOT_FOLDER_4K}
+      - ${RADARR_ROOT_FOLDER_4K}:${RADARR_ROOT_FOLDER_4K}
     profiles: [repair_4k, repair_all, all]
 
   repair_anime:
     <<: *repair
-    container_name: repairanime
+    container_name: repair_anime_service
     environment:
       - SONARR_HOST=${SONARR_HOST_ANIME}
       - SONARR_API_KEY=${SONARR_API_KEY_ANIME}
       - RADARR_HOST=${RADARR_HOST_ANIME}
       - RADARR_API_KEY=${RADARR_API_KEY_ANIME}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
-      - ${SONARR_ROOT_FOLDER_ANIME}:${SONARR_ROOT_FOLDER}
-      - ${RADARR_ROOT_FOLDER_ANIME}:${RADARR_ROOT_FOLDER}
-      - /mnt:/mnt
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
+      - ${SONARR_ROOT_FOLDER_ANIME}:${SONARR_ROOT_FOLDER_ANIME}
+      - ${RADARR_ROOT_FOLDER_ANIME}:${RADARR_ROOT_FOLDER_ANIME}
     profiles: [repair_anime, repair_all, all]
 
   repair_mux:
     <<: *repair
-    container_name: repairmux
+    container_name: repair_mux_service
     environment:
       - SONARR_HOST=${SONARR_HOST_MUX}
       - SONARR_API_KEY=${SONARR_API_KEY_MUX}
       - RADARR_HOST=${RADARR_HOST_MUX}
       - RADARR_API_KEY=${RADARR_API_KEY_MUX}
     volumes:
-      - ${REALDEBRID_MOUNT_TORRENTS_PATH}:${REALDEBRID_MOUNT_TORRENTS_PATH}
-      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}
-      - ${SONARR_ROOT_FOLDER_MUX}:${SONARR_ROOT_FOLDER}
-      - ${RADARR_ROOT_FOLDER_MUX}:${RADARR_ROOT_FOLDER}
-      - /mnt:/mnt
+      - ${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:${REALDEBRID_MOUNT_TORRENTS_PATH:-${BLACKHOLE_RD_MOUNT_TORRENTS_PATH:-/dev/null}}/../../:rslave
+      - ${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}:${TORBOX_MOUNT_TORRENTS_PATH:-/dev/null}/../../:rslave
+      - ${SONARR_ROOT_FOLDER_MUX}:${SONARR_ROOT_FOLDER_MUX}
+      - ${RADARR_ROOT_FOLDER_MUX}:${RADARR_ROOT_FOLDER_MUX}
     profiles: [repair_mux, repair_all, all]
 
   watchlist:
@@ -596,7 +586,6 @@ services:
     pull_policy: always
     volumes:
       - ./shared/tokens.json:/app/shared/tokens.json
-      - ./sockets:/app/sockets
     env_file:
       - .env
     restart: unless-stopped
@@ -612,8 +601,6 @@ services:
     volumes:
       - ./shared/tokens.json:/app/shared/tokens.json
       - ./sockets:/app/sockets
-    ports:
-      - 8010:8000
     env_file:
       - .env
     restart: unless-stopped
@@ -629,8 +616,6 @@ services:
     volumes:
       - ./shared/tokens.json:/app/shared/tokens.json
       - ./sockets:/app/sockets
-    ports:
-      - 8011:8000
     env_file:
       - .env
     restart: unless-stopped
@@ -654,6 +639,7 @@ services:
     profiles: [plex_request, all]
     depends_on:
       - plex_request
+      - plex_authentication
 
 networks:
   default:
