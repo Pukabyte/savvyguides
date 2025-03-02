@@ -156,12 +156,20 @@ retain_folder_name_extension: true
 You will need to create a library directory for plex. eg `mkdir /mnt/plex`<br/>
 Inside that directory, you will need a folder for each library you plan on using in Plex. eg. `mkdir /mnt/plex/Movies`
 
+```
+mkdir -p /mnt/plex/{Movies,Movies\ -\ 4K,Movies\ -\ Anime,Movies\ -\ Remux,TV,TV\ -\ 4K,TV\ -\ Anime,TV\ -\ Remux}
+```
+
 :::tip
 **The Plex directory is what you will also use as the root folder in Radarr & Sonarr**
 :::
 
 You will also need to create a directory for your symlinks eg. `mkdir /mnt/symlinks`<br/>
 Inside that directory, you will need a folder for each instance of *arrs `mkdir /mnt/symlinks/radarr`
+
+```
+mkdir -p /mnt/symlinks/{radarr,radarr4k,radarranime,radarrmux,sonarr,sonarr4k,sonarranime,sonarrmux}/{completed,processing}
+```
 
 After you’re finished it will look something like this:<br/>
 ```
