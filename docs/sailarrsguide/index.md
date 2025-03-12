@@ -423,8 +423,8 @@ REPAIR_RUN_INTERVAL="1d"
 #-----------------------#
 
 PYTHONUNBUFFERED=TRUE
-PUID=1000
-PGID=1000
+PUID=1000 # check your GID by running id in your terminal. Make sure this is the same all apps that will interact with symlinks
+PGID=1000 # check your GID by running id in your terminal. Make sure this is the same all apps that will interact with symlinks
 UMASK=002
 DOCKER_NETWORK=<scripts_default/saltbox>
 DOCKER_NETWORK_EXTERNAL=<true/false>
