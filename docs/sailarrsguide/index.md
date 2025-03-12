@@ -423,8 +423,8 @@ REPAIR_RUN_INTERVAL="1d"
 #-----------------------#
 
 PYTHONUNBUFFERED=TRUE
-PUID=
-PGID=
+PUID=1000
+PGID=1000
 UMASK=002
 DOCKER_NETWORK=<scripts_default/saltbox>
 DOCKER_NETWORK_EXTERNAL=<true/false>
